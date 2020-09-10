@@ -18,13 +18,11 @@
   ]
 
 def join_nested_strings(src)
-  words = []
-mixed_data_1.each do |items|
-  items.each do |item|
-    if item.is_a?(String)
-      words << item
-    end
-  end
+  sentence = mixed_data_1.flat_map do |items|
+    items.select { |item| item.is_a?(String) }
+  end.join(" ")
 end
+
+  [sentence]
 
 join_nested_strings(mixed_data_1)
