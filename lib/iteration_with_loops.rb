@@ -23,6 +23,4 @@ def join_nested_strings(src)
   end.join(" ")
 end
 
-  [sentence]
-
 join_nested_strings(mixed_data_1)
