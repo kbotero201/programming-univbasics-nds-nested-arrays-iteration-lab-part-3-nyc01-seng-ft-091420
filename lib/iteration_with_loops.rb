@@ -27,6 +27,6 @@ mixed_data_1.each do |items|
   end
 end
 
-puts join_nested_strings(mixed_data_1)
+join_nested_strings(mixed_data_1)
 
 puts "hello"
